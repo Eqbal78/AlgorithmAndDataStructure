@@ -10,7 +10,7 @@ namespace AlgorithmAndDataStructure
             while (true)
             {
                 Console.WriteLine("Choose Options");
-                Console.WriteLine("1.Permutation \n2.Binary Search \n3.Insertion Sort \n4.Bubble Sort \n5.Exit");
+                Console.WriteLine("1.Permutation \n2.Binary Search \n3.Insertion Sort \n4.Bubble Sort \n5.Merge Sort \n6.Exit");
                 Console.WriteLine("*************************************************************************");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -29,7 +29,11 @@ namespace AlgorithmAndDataStructure
                     case 4:
                         BubbleSort.BubbleSort.Bubble();
                         break;
+
                     case 5:
+                        MergSort.MergeSort.Input();
+                        break;
+                    case 6:
                         Environment.Exit(0);
                         break;
                 }
